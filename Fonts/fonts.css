@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'AvenirLTStd-Medium';
+  src: local('AvenirLTStd-Medium'),
+    url('AvenirLTStd-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BebasKai';
+  src: local('BebasKai'),
+    url('BebasKai.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
