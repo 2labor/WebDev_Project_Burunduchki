@@ -1,0 +1,25 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+}
+
+.header-list {
+  list-style: none;
+  align-items: center;
+}
+
+.header-item {
+  align-items: center;
+}
