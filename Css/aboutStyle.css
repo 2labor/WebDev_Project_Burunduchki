@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'AvenirLTStd-Medium', serif;;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.header-list {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+}
+
+.header-item {
+
+}

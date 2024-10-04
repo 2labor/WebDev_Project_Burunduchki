@@ -33,6 +33,7 @@ body{
 .navigation__list {
   display: flex;
   gap: 60px; 
+  text-wrap: nowrap;
 }
 
 .navigation__link {
