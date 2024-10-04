@@ -43,12 +43,6 @@ body{
   transition-duration: var(--transition-duration);
 }
 
-.logo {
-}
-.logo__link {
-}
-.social {
-}
 .social__list {
   display: flex;
   gap: 20px;
@@ -64,24 +58,4 @@ body{
 
 .navigation__link:hover {
   color: #bebbbbcc;
-}
-
-.home__text {
-  position: relative;
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-}
-.home__tile {
-}
-.home__subtitle {
-}
-.home__parallax img{
-  position: absolute;
-}
-.home__parallax-bg {
-}
-.home__parallax-font {
 }
