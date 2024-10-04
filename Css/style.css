@@ -30,21 +30,18 @@ body{
   margin-top: 10px;
 }
 
-
-.header__navigation {
-}
-.header__list {
+.navigation__list {
   display: flex;
   gap: 60px; 
 }
-.header__item {
-}
-.header__link {
+
+.navigation__link {
   display: flex;
   align-items: center;
   height: 90px;
   transition-duration: var(--transition-duration);
 }
+
 .logo {
 }
 .logo__link {
@@ -64,7 +61,7 @@ body{
   fill: #bebbbbcc;
 }
 
-.header__link:hover {
+.navigation__link:hover {
   color: #bebbbbcc;
 }
 
