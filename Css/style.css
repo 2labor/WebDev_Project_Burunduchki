@@ -17,6 +17,10 @@ body{
   color: #ffffff;
 }
 
+a{
+  transition-duration: var(--transition-duration);
+}
+
 .container{
   padding-inline: var(--padding-x);
   max-width: calc(var(--padding-x)*2 + var(--content-width));
