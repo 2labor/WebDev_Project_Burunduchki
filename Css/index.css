@@ -1,0 +1,127 @@
+:root{
+
+  --font-family-main:'AvenirLTStd-Medium', serif;
+  --font-family-accent:'BebasKai', serif;
+
+  --transition-duration: 0.3s;
+
+  --padding-x: 15px;
+  --content-width: 1280px;
+}
+
+body{
+  background-color: #000000;
+  font-family: var(--font-family-main);
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+a{
+  transition-duration: var(--transition-duration);
+}
+
+.container{
+  padding-inline: var(--padding-x);
+  max-width: calc(var(--padding-x)*2 + var(--content-width));
+}
+
+.header {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 60px; 
+  text-wrap: nowrap;
+}
+
+.navigation__link {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  transition-duration: var(--transition-duration);
+}
+
+.social__list {
+  display: flex;
+  gap: 20px;
+}
+
+.social__link svg {
+  transition-duration: var(--transition-duration);
+}
+
+.social__link svg:hover {
+  fill: #bebbbbcc;
+}
+
+.navigation__link:hover {
+  color: #bebbbbcc;
+}
+
+
+/* ----------------------------- Parallax Section --------------------------- */
+
+.parallax__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax__text {
+  z-index: 100;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
+
+.parallax__text h1 {
+  text-align: center;
+  font-size: 65px;
+  font-weight: 400;
+  font-family: var(--font-family-accent);
+  margin-bottom: 10px;
+}
+
+.parallax__text p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.parallax__effect img{
+  display: flex;
+  width: 100vw; 
+}
+
+.parallax__container {
+  position: relative;
+}
+
+.parallax__front{
+  transform: translateY(calc(var(--scrollTop) * (-1) / 3));
+  position: absolute;
+  z-index: 100;
+  top: 0;
+}
+
+.parallax__front::after {
+  content: ' ';
+  display: block;
+  background-color: #000000;
+  width: 100%;
+  height: 100vh;
+}
+
+/* --------------------------------- Content ---------------------------------- */
+
+.content {
+  background-color: #000000;
+  height: 1000px;
+}
