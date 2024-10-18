@@ -27,7 +27,6 @@ a{
 }
 
 .header {
-  position: fixed;
   z-index: 200;
   width: 100%;
   justify-content: space-between;
