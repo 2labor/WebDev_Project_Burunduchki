@@ -7,13 +7,13 @@ body, html{
   color: #E0E0E0;
 }
 
-p, li {
+/* p, li {
   margin: 10px;
 }
 
 p {
   text-align: center;
-}
+} */
 
 .div-storiesBox {
   display: flex;
