@@ -32,7 +32,6 @@ const handleResponsiveMenu = () => {
     navigation.classList.remove('active');
     burgerMenuBtn.classList.add('none');
     closeMenuBtn.classList.add('none');
-    console.log('hello')
   }
 };
 
@@ -44,7 +43,7 @@ burgerMenuBtn.addEventListener('click', openMenu);
 closeMenuBtn.addEventListener('click', closeMenu);
 window.addEventListener('resize', handleResponsiveMenu);
 window.addEventListener('resize', () => {
-  console.log(window.innerWidth)
+  console.log(window.innerWidth, 'px')
 });
 
 handleResponsiveMenu();
