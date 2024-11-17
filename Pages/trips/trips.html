@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <title>Lucas Snow</title>
 
-  <link rel="stylesheet" href="Css/reset.css">
-  <link rel="stylesheet" href="Css/index.css">
-  <link rel="stylesheet" href="Fonts/fonts.css">
-  <link rel="stylesheet" href="Css/home.css">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="trips.css">
 
 </head>
 <body>
@@ -20,12 +18,8 @@
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
       </button>
       <ul class="navigation__list">
-        <div class="burger-menu__top">
-          <img src="images/logo-home.svg" alt="logo">
-          <button class="navigation__close">
-            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/>
-          </svg>
-        </div>
+        <button class="navigation__close none">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg>
         </button>
         <li class="navigation__item">
           <a href="Pages/about/about.html" class="navigation__link">About us</a>
@@ -81,63 +75,18 @@
       </li>
     </ul>
   </header>
-  <section class="parallax">
-    <div class="parallax__container">
-      <div class="parallax__text">
-        <h1>Lucas Snow</h1>
-        <p>Visit the most beautiful mountains in the world</p>
-      </div>
-      <div class="parallax__effect">
-        <div class="parallax__front">
-          <img src="images/Mountain.png" alt="">
-        </div>
-        <div class="parallax__back">
-          <img src="images/home-bg.jpg" alt="">
-        </div>
+  <section class="banner">
+    <div class="banner__cover">
+      <img src="/images/trips-banner.jpg" alt="">
+      <div class="banner__info">
+        <h2 class="banner__title">Unseen adventure on snow</h2>
+        <p class="banner__description">
+          Welcome to a world where travel is accessible for everyone! We offer unforgettable tours and itineraries designed to suit both novice and experienced adventurers. The inspiring stories of our clients are a testament to the boundless potential within each of us. Learn more about what makes our journeys unique, and discover the incredible world of blind skateboarders who confidently conquer slopes and streets!
+        </p>
       </div>
     </div>
   </section>
-  <section class="content ">
-    <div class="content__main">
-      <h2 class="content__title anim">What we provide</h2>
-      <p class="content__description anim">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt consequuntur aliquam quibusdam nemo dignissimos a corrupti, esse impedit iusto cumque dolorum fuga voluptas laborum similique voluptatum laudantium veritatis aspernatur velit!
-      </p>
-    </div>
-    <ul class="cards__list">
-      <li class="card anim">
-        <img src="images/home-scroll/1.jpg" alt="" width="540" height="360" loading="lazy">
-        <div class="card__info">
-          <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo eum nihil blanditiis, aspernatur laborum aliquid magni animi eos pariatur dicta deserunt quam alias, quas aperiam suscipit tenetur, quisquam omnis nesciunt.</p>
-        </div>
-      </li>
-      <li class="card anim">
-        <img src="images/home-scroll/2.jpg" alt="" width="540" height="360" loading="lazy">
-        <div class="card__info">
-          <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo eum nihil blanditiis, aspernatur laborum aliquid magni animi eos pariatur dicta deserunt quam alias, quas aperiam suscipit tenetur, quisquam omnis nesciunt.</p>
-        </div>
-      </li>
-      <li class="card anim">
-        <img src="images/home-scroll/3.jpg" alt="" width="540" height="360" loading="lazy">
-        <div class="card__info">
-          <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo eum nihil blanditiis, aspernatur laborum aliquid magni animi eos pariatur dicta deserunt quam alias, quas aperiam suscipit tenetur, quisquam omnis nesciunt.</p>
-        </div>
-      </li>
-      <li class="card anim">
-        <img src="images/home-scroll/4.jpg" alt="" width="540" height="360" loading="lazy">
-        <div class="card__info">
-          <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo eum nihil blanditiis, aspernatur laborum aliquid magni animi eos pariatur dicta deserunt quam alias, quas aperiam suscipit tenetur, quisquam omnis nesciunt.</p>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <script src="Js/index.js"></script>
-  <script src="Js/burgerMenu.js"></script>
+  <script src="/Js/burgerMenu.js"></script>
 
 </body>
 </html>
