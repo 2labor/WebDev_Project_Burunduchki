@@ -12,7 +12,6 @@ const openMenu = () => {
   navigation.classList.remove('none');
   navigation.classList.add('active');
   closeMenuBtn.classList.remove('none');
-
 };
 
 const closeMenu = () => {
@@ -35,15 +34,14 @@ const handleResponsiveMenu = () => {
   }
 };
 
-window.addEventListener('click', (event) => {
-  console.log(event)
-})
+// window.addEventListener('click', (event) => {
+//   if(!event.target.classList.contains('navigation__close') && !event.target.classList.contains('navigation__burger-menu')){
+//     closeMenu()
+//   }
+// })
 
 burgerMenuBtn.addEventListener('click', openMenu);
 closeMenuBtn.addEventListener('click', closeMenu);
 window.addEventListener('resize', handleResponsiveMenu);
-window.addEventListener('resize', () => {
-  console.log(window.innerWidth, 'px')
-});
 
 handleResponsiveMenu();
