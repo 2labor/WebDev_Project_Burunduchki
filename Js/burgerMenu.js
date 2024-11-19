@@ -23,7 +23,7 @@ const closeMenu = () => {
 };
 
 const handleResponsiveMenu = () => {
-  if (window.innerWidth < 600) {
+  if (window.innerWidth < 630) {
     navigation.classList.add('none');
     burgerMenuBtn.classList.remove('none');
   } else {

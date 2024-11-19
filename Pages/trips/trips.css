@@ -20,6 +20,7 @@ header {
   transform: translate(-50%, -50%);
 }
 .banner__title {
+  text-wrap: nowrap;
   font-size: 52px;
   text-align: center;
   margin-bottom: 15px;
@@ -86,4 +87,59 @@ header {
 .card__item-text p {
   font-size: 16px;
   padding: 20px;
+}
+
+@media(max-width: 1020px) {
+  .background {
+    padding: 30px;
+  }
+
+  .banner__title {
+    font-size: 48px;
+  }
+
+  .banner__description {
+    width: 500px;
+  }
+
+  .cards__list {
+    grid-template-columns: repeat(2, 350px);
+  }
+}
+
+@media(max-width: 760px) {
+  .background {
+    padding: 10px;
+  }
+
+  .banner__title {
+    font-size: 42px;
+  }
+
+  .banner__description {
+    width: 500px;
+  }
+
+  .cards__text-title {
+    font-size: 52px;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+
+  .cards__list {
+    grid-template-columns: repeat(1, 350px);
+  }
+}
+
+@media(max-width: 550px) {
+
+  .banner__description {
+    width: 400px;
+  }
+
+  .banner__title {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
 }

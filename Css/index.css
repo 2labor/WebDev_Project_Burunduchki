@@ -42,19 +42,20 @@ a{
 
 .navigation__list.active{
   z-index: 100;
-  position: absolute;
+  position: fixed;
   flex-direction: column;
   text-align: center;
   gap: 0;
   background-color: #1b1a1a;
   width: 40%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   left: 0;
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
+  overflow: hidden;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
@@ -77,6 +78,14 @@ a{
 
 .navigation__close {
   background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+
+.navigation__close svg {
+  width: 30px;
+  aspect-ratio: 1;
 }
 
 .navigation__list {
@@ -307,7 +316,7 @@ a{
 
 }
 
-@media(max-width: 600px) {
+@media(max-width: 630px) {
 
   .parallax__text h1{
     font-size: 55px;
