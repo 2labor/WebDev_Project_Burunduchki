@@ -1,0 +1,145 @@
+header {
+  position: absolute;
+  background-color: transparent;
+}
+
+.banner__cover {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.banner__cover img{
+  width: 100vw;
+}
+.banner__info {
+  color: #1b1a1a;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner__title {
+  text-wrap: nowrap;
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.banner__description {
+  text-align: center;
+  width: 800px;
+  font-size: 18px;
+}
+
+.background {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 50px;
+}
+
+/* ========================== Cards ====================================== */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 30px;
+}
+
+.cards__list {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 30px;
+}
+
+.cards__list img {
+  width: 350px;
+  aspect-ratio: 1;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 10px;
+}
+
+.cards__text-title {
+  font-size: 62px;
+  margin-bottom: 50px;
+  font-family: 'AvenirLTStd-Medium', serif;
+  font-weight: 600;
+}
+
+.card__item {
+  background-color: rgba(72, 70, 70, 0.4);
+  border-radius: 30px;
+}
+
+.card__item-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+  
+.card__item-title {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.card__item-text p {
+  font-size: 16px;
+  padding: 20px;
+}
+
+@media(max-width: 1020px) {
+  .background {
+    padding: 30px;
+  }
+
+  .banner__title {
+    font-size: 48px;
+  }
+
+  .banner__description {
+    width: 500px;
+  }
+
+  .cards__list {
+    grid-template-columns: repeat(2, 350px);
+  }
+}
+
+@media(max-width: 760px) {
+  .background {
+    padding: 10px;
+  }
+
+  .banner__title {
+    font-size: 42px;
+  }
+
+  .banner__description {
+    width: 500px;
+  }
+
+  .cards__text-title {
+    font-size: 52px;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+
+  .cards__list {
+    grid-template-columns: repeat(1, 350px);
+  }
+}
+
+@media(max-width: 550px) {
+
+  .banner__description {
+    width: 400px;
+  }
+
+  .banner__title {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+}
