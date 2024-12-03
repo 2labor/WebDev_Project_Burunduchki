@@ -126,6 +126,12 @@
   .form-group textarea:focus {
     border-color: #FF5722;
   }
+
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-left: 5px;
+  }
   
   .btn-submit {
     padding: 0.8rem 1.5rem;
